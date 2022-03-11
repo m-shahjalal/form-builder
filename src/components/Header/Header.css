@@ -1,0 +1,9 @@
+.logo-text {
+	@apply font-semibold text-xl tracking-tight;
+}
+.header-list_item {
+	@apply flex text-white;
+}
+.header {
+	@apply fixed top-0 bg-primary right-0 left-0 z-20;
+}

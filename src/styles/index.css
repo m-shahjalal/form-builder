@@ -1,0 +1,21 @@
+/* Poppins fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	@import url('./components/button.css');
+	@import url('./components/input.css');
+	@import url('./components/flex.css');
+}
+
+html,
+body {
+	@apply bg-sky-50;
+}
+
+#root {
+	@apply flex flex-col justify-between min-h-screen;
+}
