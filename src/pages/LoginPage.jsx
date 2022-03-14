@@ -19,7 +19,7 @@ const LoginPage = () => {
 	const onSubmit = (data) => dispatch(signUpHandler(data));
 
 	useEffect(() => {
-		isLoggedIn && navigate('/create-form');
+		isLoggedIn && navigate('/admin');
 	}, [isLoggedIn, navigate]);
 
 	return (
@@ -32,7 +32,7 @@ const LoginPage = () => {
 					className='m-6 px-12 w-full'>
 					<div className='relative'>
 						<input
-							className='input-field'
+							className='input-field pl-12'
 							{...register('email', {
 								required: 'email is required',
 							})}
@@ -57,7 +57,7 @@ const LoginPage = () => {
 					)}
 					<div className='relative mt-3'>
 						<input
-							className='input-field'
+							className='input-field pl-12'
 							type='password'
 							placeholder='Password'
 							{...register('password', {
